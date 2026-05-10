@@ -1,25 +1,11 @@
-# 🧊 Analiza zasięgu lodu morskiego Antarktyki
+# Analiza zasięgu lodu morskiego Antarktyki
 
 Projekt analizuje dzienny zasięg lodu morskiego wokół Antarktyki w latach **1978–2009** na podstawie danych NSIDC. Zawiera wizualizacje, analizę sezonowości i trendu oraz predykcję z użyciem **Random Forest**.
 
 ---
 
-## 📁 Struktura projektu
 
-```
-.
-├── antarktyda.py     # główny skrypt – uruchom ten plik
-├── daily_ice_edge.csv     # dane wejściowe 
-├── README.md
-└── outputs/
-    ├── antarktyda.gif     # animacja zasięgu lodu
-    ├── sezonosc.png       # klimatologiczny cykl sezonowy
-    └── predykcja_rf.png   # predykcja Random Forest vs regresja liniowa
-```
-
----
-
-## 📊 Dane
+## Dane
 
 - **Źródło:** NSIDC (National Snow and Ice Data Center)
 - **Zakres:** 26 października 1978 – 16 maja 2009
@@ -27,11 +13,11 @@ Projekt analizuje dzienny zasięg lodu morskiego wokół Antarktyki w latach **1
   - kolumna `Date` – data obserwacji
   - kolumny `longitude_0E` … `longitude_360E` – szerokość geograficzna krawędzi lodu dla każdego kąta (0°–360°)
 
-> ⚠️ **Brak danych:** w okresie **3 grudnia 1987 – 13 stycznia 1988** brak obserwacji satelitarnych. Dni z tego przedziału zostały usunięte z analizy.
+>  **Brak danych:** w okresie **3 grudnia 1987 – 13 stycznia 1988** brak obserwacji satelitarnych. Dni z tego przedziału zostały usunięte z analizy.
 
 ---
 
-## 🚀 Uruchomienie
+## Uruchomienie
 
 ### Wymagania
 
